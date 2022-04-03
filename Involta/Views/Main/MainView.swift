@@ -43,7 +43,6 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-
 extension MainView {
     private var messagesScrollView: some View {
         ScrollViewReader { proxy in
@@ -57,7 +56,6 @@ extension MainView {
                     ForEach(0..<vm.allMessages.count, id: \.self) { index in
                         MessageView(message: vm.allMessages[index])
                             .id(index)
-                        
                     }
                 }
                 .padding()

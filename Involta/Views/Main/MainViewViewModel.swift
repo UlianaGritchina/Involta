@@ -27,7 +27,6 @@ class MainViewViewModel: ObservableObject {
     var oldMessages: [String] = []
     var count = 0
     
-    
     func getMoreMessages() {
         oldMessages = allMessages
         count += 20
